@@ -11,7 +11,7 @@ header {
     justify-content: right;
     align-items: center;
     background-color: #C4DFDF;
-    height: 15em;
+    height: 10em;
     width: 100%;
     position:fixed;
 
@@ -21,14 +21,13 @@ header {
     align-items: center;
     justify-content: left;
     width: 70%;
+    height: auto;
   }
-
-
 
   a{
     color: #F8F6F4;
     font-family: 'Spectral SC', serif;
-    font-size: 2.5em;
+    font-size: 2.0em;
     font-weight: bold;
     margin: 20px;
     margin-right: 20px;
@@ -46,55 +45,74 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
+  }
+  .logo{
+    width: 40%;
   }
 
   .conteudoInicio{
     display: flex;
     margin-top:8.7%;
     width: 100%;
-    height: 80vh;
+    height:fit-content;
     align-items: center;
     justify-content: center;
   }
   .textoInicio{
     justify-content: center;
     align-items: center;
-    font-size: 2.6em;
+    font-size: 2.0em;
     font-family: 'Josefin Slab', serif;
     text-align: center;
     margin-inline: 50px;
   }
 
+  .imgrest{
+    width: 50em;
+    padding-left: 10%;
+  }
+
   .linha{
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    text-align: center;
     width: 100%;
     height: auto;
+  }
+  .qp{
+    margin: 5%;
+    width: 50%;
+    border: 0px;
+    border-top: 1px dashed #d4c0ac; 
   }
   .menu{
     display: block;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
+
   }
   .itensMenu{
-    margin-top:10%;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80vh;
+    height: fit-content;
   }
   
   .itemA{
+    display: block;
     background-color: #E3F4F4;
     border-radius: 10%;
     width: 263px;
-    height: fit-content;
-    margin: 30px;
+    height: min-content;
+    margin: 2.5%;
     padding: 20px;
     font-family: 'Wire One', sans-serif;
-    font-size: 3.0em;
+    font-size: 2.5em;
     justify-content: center;
     text-align: center;
   }
@@ -103,12 +121,12 @@ header {
     display: block;
     background-color: #F8F6F4;
     border-radius: 10%;
-    width: 243px;
-    height: fit-content;
-    margin: 30px;
+    width: 263px;
+    height: min-content;
+    margin: 2.5%;
     padding: 20px;
     font-family: 'Wire One', sans-serif;
-    font-size: 3.0em;
+    font-size: 2.5em;
     text-align: center;
     justify-content: center;
   }
@@ -118,7 +136,7 @@ header {
 
   h4{
     font-family: 'Kristi', cursive;
-    font-size: 48px;
+    font-size: 38px;
     text-align: center;
     margin: 20px;
     margin-top: 30px;
@@ -130,14 +148,13 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
   }
 
   .conteudoSobre{
     display: flex;
     width: 100%;
-    height: 80vh;
-    margin-top: 10%;
+    height: fit-content;
   }
 
   .imgSobre{
@@ -156,11 +173,11 @@ header {
   .historia{
     display: block;
     font-family: 'Wire One', sans-serif;
-    font-size: 3.0em;
+    font-size: 2.5em;
     text-align: center;
     margin: 100px;
     margin-bottom: auto;
-    padding: 50px 50px;
+    padding: 5% 5%;
     background-color:#E3F4F4;
     border-radius: 10%;
     align-items: center;
@@ -174,25 +191,25 @@ header {
 
   .contato{
     display: block;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
+  }
+  .titulo{
+    display: none;
   }
 
   .conteudoContato{
     display: flex;
     width: 100%;
-    height: 80vh;
-    margin-top: 10%;
+    height: fit-content;
     font-size: 35px;
     font-family: 'Wire One', sans-serif;
     justify-content: center;
     align-items: center;
   }
   .forml{
-    margin: 120px;
+    margin: 5%;
   }
-
-  
 
 input[type=text] {
     width: 100%;
@@ -213,12 +230,12 @@ input[type=text] {
 .imgContato{
     display: block;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     background-color: #F8F6F4;
     border-radius: 10%;
-    margin: 100px;
+    margin: 5%;
     padding: 20px;
     text-align: center;
 }
@@ -228,7 +245,7 @@ input[type=submit] {
     margin: 8px 0;
     box-sizing: border-box;
     padding: 10px;
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'Wire One', sans-serif;
     background-color: #d4c0ac;
     color: white;
@@ -244,6 +261,10 @@ input[type=text]:focus {
     background-color: #C4DFDF
   }
 
+  .voltar{
+    display: none;
+  }
+
 @media screen and (max-width: 700px) {
     header{  
       flex-direction: column;
@@ -256,9 +277,13 @@ input[type=text]:focus {
     .sec{
       flex-direction: column;
     }
+    .logo{
+      width: 80%;
+    }
     .imgInicio{
       max-width: 100%;
       height:auto;
+      margin-left: 2%;
     }
     .conteudoInicio{
     flex-direction: column;
@@ -267,6 +292,7 @@ input[type=text]:focus {
   .imgLogo{
     margin: 0%;
     width: 60%;
+    margin-right: 5%;
   }
   img{
     width: 100%;
@@ -299,11 +325,12 @@ input[type=text]:focus {
   .conteudoSobre{
     flex-direction: column-reverse;
     width: 100%;
-    height: fit-content;
+    height: auto;
   }
   .imgSobre, .sobre{
     margin: 0%;
-    height: fit-content;
+    height: auto;
+    width: 100%;
   }
   .conteudoContato{
     flex-direction: column;
@@ -331,20 +358,10 @@ input[type=text]:focus {
     margin: 5% 0%;
 
   }
-  .linha{
-    background-color: white;
-    justify-content: center;
+  .voltar{
     display: flex;
-    text-align: center;
-    width: 100%;
-    height: auto;
   }
-  .qp{
-    margin: 5%;
-    width: 50%;
-    border: 0px;
-    border-top: 1px dashed #d4c0ac; 
-  }
+
 
 }
 
